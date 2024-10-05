@@ -47,15 +47,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 })
-
-
-//add new section about what you are currently learning (maybe Git or parcel...)    
-
-//to start scss sass .\styles\main.scss .\dist\main.css --watch  
-
-
-
-// new project: build the associations game from papaplatte youtube video
-// you need:
-//socket.io
-//nodejs
