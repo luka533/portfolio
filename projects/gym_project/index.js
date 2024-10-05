@@ -261,9 +261,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-
-
-
 //motivation section
 
   const motivationalQuote = document.querySelector(".motivational__quote")

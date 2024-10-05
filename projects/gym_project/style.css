@@ -70,6 +70,7 @@ body {
   transform: scale(1.05);
 }
 
+/*header section*/
 .header {
   display: flex;
   align-items: center;
@@ -99,7 +100,6 @@ body {
   align-items: center;
 }
 
-
 .header__list {
   display: flex;
   gap: 2rem;
@@ -113,7 +113,6 @@ body {
   text-decoration: underline;
   transform: scale(1.05);
 }
-
 
 .header__list-item-link {
   color: white;
@@ -150,8 +149,6 @@ body {
   
 }
 
-
-
 .header__list-hamburger-menu {
   display: none;
   position: absolute;
@@ -187,11 +184,6 @@ body {
   transform: translate(0);
 }
 
-
-
-
-
-
 .heading {
   font-size: 2rem;
   font-size: 3.25rem;
@@ -210,12 +202,7 @@ body {
   background-color: rgba(255, 255, 255, 0.014);
 }
 
-
-
-
-
-
-
+/*hero section*/
 .hero {
   background-image: 
   linear-gradient(90deg, var(--main-bg-color-transparent-hero) 0%, var(--main-bg-color-transparent-hero) 100%);
@@ -272,11 +259,6 @@ body {
   text-decoration: none;
 }
 
-
-.hero__description {
-  
-}
-
 .hero__video-colorize {
   position: absolute;
   z-index: 1;
@@ -288,15 +270,7 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
+/*workout section*/
 .workout {
   padding-top: 7rem;
   background-color: var(--main-bg-color);
@@ -368,10 +342,7 @@ body {
   color: var( --secondary-font-color);
 }
 
-
-
-
-
+/*timer section*/
 .timer {
   background-color: var(--main-bg-color);
   background-image: linear-gradient(90deg, var(--main-bg-color-transparent) 0%, var(--main-bg-color-transparent) 100%) 
@@ -385,10 +356,6 @@ body {
   display: flex;
   gap: 2rem;
   margin-bottom: 3rem;
-}
-
-.timer__start, .timer__stop, .timer__reset  {
-  
 }
 
 .timer__start {
@@ -408,22 +375,7 @@ body {
   font-size: 2.5rem;
 }
 
-
-
-.timer__container {
-  
-}
-
-
-
-
-
-
-
-
-
-
-
+/*bmi section*/
 .bmi {
   background-color: var(--main-bg-color);
   background-image: 
@@ -466,8 +418,7 @@ body {
 color: grey;
 } 
 
-
-
+/*motivation section*/
 .motivational {
   background-color: var(--main-bg-color);
   background-image: 
@@ -495,7 +446,7 @@ color: grey;
 
 }
 
-
+/*footer section*/
 .footer {
   padding-top: 4rem;
   padding-bottom: 1rem;
