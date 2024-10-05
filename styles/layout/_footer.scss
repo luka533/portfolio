@@ -1,0 +1,51 @@
+@use "../abstracts" as *;
+
+
+.footer {
+  padding-top: 5rem;
+
+ 
+
+  &__list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @media(min-width: $breakpoint-xxxs) {
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    }
+   
+
+    &-item {
+      list-style: none;
+      &-link {
+        color: var(--black);
+        text-decoration: none;
+        position: relative;
+
+        &::after {
+          @include hoverUnderlineBefore;
+        }
+
+        &:hover {
+          color: var(--color-secondary);
+           &::after {
+            @include hoverUnderlineAfter;
+           }
+        }
+      }
+
+      &-contact {
+          color: var(--white);
+          transition: background-color 0.125s ease-in-out;
+
+          &:hover {
+            background-color: var(--color-secondary);
+          }
+      }
+    }
+  }
+}

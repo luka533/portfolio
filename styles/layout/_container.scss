@@ -1,0 +1,10 @@
+@use "../abstracts" as *;
+
+
+.container {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0rem 1rem 1rem 1rem;
+  overflow: hidden;
+}

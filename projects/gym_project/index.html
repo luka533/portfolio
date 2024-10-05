@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Gym-website</title>
+
+</head>
+<body>
+
+  <header class="header container" id="header">
+    <h1 class="header__heading"><a class="header__heading-link" href="#hero">MyWorkout</a></h1>
+    <nav class="header__navbar">
+      <ul class="header__list">
+        <li class="header__list-item"><a class="header__list-item-link" href="#workout">Workout Plan</a></li>
+        <li class="header__list-item"><a class="header__list-item-link" href="#timer">Timer</a></li>
+        <li class="header__list-item"><a class="header__list-item-link" href="#bmi">BMI-Calculator</a></li>
+        <li class="header__list-item"><a class="header__list-item-link" href="#motivational">Motivational quotes</a></li>
+      </ul>
+
+      
+      <input class="header__hamburger-menu-toggle-checkbox" id="menu__toggle" type="checkbox"/>
+      <label for="menu__toggle">
+        <img class="header__hamburger-icon" src="img/hamburgerIcon-white.png" alt="hamburger-icon">
+      </label>
+
+      <ul class="header__list-hamburger-menu">
+        <input class="header__hamburger-menu-toggle-checkbox" id="menu__toggle" type="checkbox"/>
+        <label for="menu__toggle">
+          <a class="header__hamburger-close" href="">X</a>
+        </label>
+        <li class="header__list-item header__list-item-hamburger-menu"><a class="header__list-item-link" href="#workout">Workout Plan</a></li>
+        <li class="header__list-item header__list-item-hamburger-menu"><a class="header__list-item-link" href="#timer">Timer</a></li>
+        <li class="header__list-item header__list-item-hamburger-menu"><a class="header__list-item-link" href="#bmi">BMI-Calculator</a></li>
+        <li class="header__list-item header__list-item-hamburger-menu"><a class="header__list-item-link" href="#motivational">Motivational quotes</a></li>
+      </ul>
+      
+    </nav>
+  </header>
+
+  <section class="hero container" id="hero">
+    <video class="hero__video" autoplay loop muted playsinline>
+      <source type="video/mp4" src="img/5319438-uhd_3840_2160_25fps.mp4">
+    </video>
+    <div class="hero__container">
+      <h2 class="heading hero__heading">All Your Workout Apps <span class="hero__heading-span">combined!</span></h2>
+      <div class="hero__contact-link-container">
+        <a class="button button--contact hero__contact-link" href= "mailto: simonovicluka013@outlook.de">Contact Us</a>
+      </div>
+      <p class="description hero__description">Lorem ipsum, dolor sit amet consectetur 
+        adipisicing elit. Ipsam aliquid voluptatum amet, alias sunt aperiam nisi deleniti ducimus minima, 
+        commodi corrupti excepturi quia aspernatur optio.</p>
+    </div>
+    <div class="hero__video-colorize"></div>
+  </section>
+
+
+  
+  <section class="workout container" id="workout">
+    <h3 class="heading workout__header">Workout Plan</h3>
+    <div class="workout__container">
+
+
+      <!--input-->
+      <div class="workout__input-elements">
+        <input class="input workout__exercise-input" type="text" placeholder="exercise">
+        <input class="input workout__sets-input" type="text" placeholder="sets">
+        <input class="input workout__reps-input" type="text" placeholder="reps">
+      </div>
+
+      <!--create Elements
+      <div class="workout__elements"></div>
+        <p class="workout__elements-exercise">Bench Press</p>
+        <p class="workout__elements-sets">Sets: <span class="workout__exercise-sets-span">3</span></p>
+        <p class="workout__elements-reps">Reps: <span class="workout__exercise-reps-span">12</span></p>
+      </div>
+      -->
+
+    </div>
+    <button class="button button--orange workout__add-exercise">Add</button>
+    <p class="purpose-text">Stop forgeting your workout plan!</p>
+    <p class="description workout__description">Lorem ipsum dolor, sit amet consectetur adipisicing el
+      it. Eius illo explicabo sint sunt consequuntur, ipsum autem suscipit amet voluptatem dolorum maiores
+      mollitia officia, odit expedita natus doloribus, corporis saepe? Libero.
+    </p>
+  </section>
+
+
+
+  <section class="timer container"id="timer">
+    <h3 class="heading timer__heading">Timer</h3>
+    <div class="timer__button-container">
+      <button class="button button--orange timer__start">start</button>
+      <button class="button button--orange timer__stop">stop</button>
+      <button class="button button--orange timer__reset">reset</button>
+    </div>
+    <div class="timer__container">
+      <p class="timer__countdown">00:00:00:000</p>
+    </div>
+    <p class="purpose-text timer__purpose">Made for your ideal recovery break!</p>
+    <p class="description timer__description">Lorem ipsum dolor, sit amet consectetur adipisicing el
+      it. Eius illo explicabo sint sunt consequuntur, ipsum autem suscipit amet voluptatem dolorum maiores
+      mollitia officia, odit expedita natus doloribus, corporis saepe? Libero.
+    </p>
+  </section>
+
+
+
+  <section class="bmi container" id="bmi">
+    <h3 class="heading bmi__header">BMI calculator</h3>
+    <input class="input bmi__input-weight bmi__input" type="text" placeholder="Your weigth in kg">
+    <input class="input bmi__input-heigth bmi__input" type="text" placeholder="Your heigth in cm">
+    <button class="button button--orange bmi-calculate">calculate</button>
+    <p class="bmi__result"></p>
+    <p class="bmi__health"></p>
+
+    <p class="purpose-text">Prioritize your health!</p>
+
+    <p class="description bmi__description">Lorem ipsum dolor, sit amet consectetur adipisicing el
+      it. Eius illo explicabo sint sunt consequuntur, ipsum autem suscipit amet voluptatem dolorum maiores
+      mollitia officia, odit expedita natus doloribus, corporis saepe? Libero.
+    </p>
+  </section>
+
+  <section class="motivational container"  id="motivational">
+    <h3 class="heading motivational__heading">Motivational quotes</h3>
+    <p class="motivational__quote"></p>
+    <p class="motivational__quote-author"></p>
+    <button class="button button--orange motivational__quote-generator">Generate quote</button>
+
+    <p class="purpose-text">For times when you do not feel like it!</p>
+    <p class="description motivational__description">Lorem ipsum dolor, sit amet consectetur adipisicing el
+      it. Eius illo explicabo sint sunt consequuntur, ipsum autem suscipit amet voluptatem dolorum maiores
+      mollitia officia, odit expedita natus doloribus, corporis saepe? Libero.
+    </p>
+  </section>
+
+  <footer class="footer container">
+    <ul class="footer__list">
+      <li class="footer__list-item"> <a class="footer__list-item-link" href="#">Cookies</a> </li>
+      <li class="footer__list-item"> <a class="footer__list-item-link" href="#">Cookies</a> </li>
+      <li class="footer__list-item"> <a class="footer__list-item-link" href="#">Cookies</a> </li>
+      <li class="footer__list-item"> <a class="footer__list-item-link" href="#">Cookies</a> </li>
+    </ul>
+  </footer>
+
+  <script src="index.js"></script>
+
+
+</body>
+</html>

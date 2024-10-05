@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/main.css">
+  <title>Portfolio</title>
+</head>
+<body>
+
+  <div class="container">
+    <header class="header">
+      <nav class="header__navbar">
+        <h2 class="header__navbar-secondary-heading">Luka Simonovic</h2>
+        <ul class="header__navbar-list">
+          <li class="header__navbar-list-item"> <a class="header__navbar-list-item-link" href="#technology">projects</a>  </li>
+          <li class="header__navbar-list-item"> <a class="header__navbar-list-item-link" href="mailto: simonovicluka013@outlook.de">contact</a>  </li>
+          <li class="header__navbar-list-item"> <a class="header__navbar-list-item-link" href="#knowledge">skills</a> </li>
+        </ul>
+
+        <div class="header__navbar-logo-container">
+          <img class="header__navbar-logo-image" src="img/LS-logo.webp" alt="">
+        </div>
+
+        <div class="header__navbar-hamburger-menu-container">
+          <input class="header__navbar-hamburger-icon-checkbox" type="checkbox" id="menu-toggle">
+          <label for="menu-toggle">
+            <img class="header__navbar-hamburger-icon" src="img/hamburgerIcon.png" alt="select icon">
+            <img class="header__navbar-hamburger-icon-white" src="img/hamburgerIcon-white.png" alt="select icon">
+          </label>
+          <ul class="header__navbar-list-menu-toggle">
+            <div class="header__navbar-list-close"></div>
+            <li class="header__navbar-list-item">projects</li>
+            <li class="header__navbar-list-item">contact</li>
+            <li class="header__navbar-list-item">skills</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="hero">
+      <h1 class="hero__header-main">Hey! I'm  <span class="hero__header-main-span">Luka Simonovic</span> <span class="hero__header-main-hand">👋</span> </h1>
+      <!--
+      <div class="hero__portrait-container">
+        <img class="hero__portrait-item" src="img/sass_logo-transparent-background.png" alt="My portrait">
+      </div>
+      -->
+
+      <p class="hero__description">I'm passionate about <span class="hero__description-span">frontend development</span> and on my journey to become a Developer. I am currently a student and 
+        striving to get my highschool diploma.</p>
+      <a class="hero__contact-link button" href="mailto: simonovicluka013@outlook.de">Contact</a>
+      <p class="hero__switch-mode-text swicth-darkmode">Switch mode</p>
+
+      <label class="switch">
+        <input class="checkbox" type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    
+    </section>
+
+
+    <section id="technology" class="technology" >
+      <h3 class="technology__learning-heading">Some of my projects</h3>
+      <div class="technology__collection">
+        <div class="technology__collection-item">
+          <a class="technology__collection-image-link" href="projects/gym_project/index.html" target="_blank">
+            <img class="technology__collection-image" src="img/gymProject-edited.png" alt="My Gym Project">
+            <span class="technology__collection-image-link-span">My Gym Project</span>
+          </a>
+        </div>
+        <div class="technology__collection-item">
+          <a class="technology__collection-image-link" href="projects/weather_project/index.html" target="_blank">
+            <img class="technology__collection-image" src="img/weatherProject.png" alt="My Weather Project">
+            <span class="technology__collection-image-link-span">My Weather Project</span>
+          </a>
+        </div>
+        <div class="technology__collection-item">
+          <a class="technology__collection-image-link" href="projects/todo_project/index.html" target="_blank">
+            <img class="technology__collection-image" src="img/todoListProject.png" alt="My Todo-list Project">
+            <span class="technology__collection-image-link-span">My Todo Project</span>
+          </a>
+        </div>
+        <div class="technology__collection-item">
+          <a class="technology__collection-image-link" href="projects/calculator_project/index.html" target="_blank">
+            <img class="technology__collection-image" src="img/calculatorProject-cropped.png" alt="My Calculator Project">
+            <span class="technology__collection-image-link-span">My Calculator Project</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="knowledge" class="knowledge">
+      <h3 class="knowledge__container-heading">So far I have worked with</h3>
+      <div class="knowledge__container">
+        <div class="knowledge__container-item">
+          <img class="knowledge__container-item-image" src="img/html5_logo.png" alt="HTML5 logo" loading="lazy">
+        </div>
+        <div class="knowledge__container-item">
+          <img class="knowledge__container-item-image" src="img/css3_logo-changed.png" alt="CSS3 logo" loading="lazy">
+        </div>
+        <div class="knowledge__container-item">
+          <img class="knowledge__container-item-image" src="img/sass_logo-transparent-background.png" alt="SASS logo" loading="lazy">
+        </div>
+        <div class="knowledge__container-item">
+          <img class="knowledge__container-item-image" src="img/javascript_logo.png" alt="Javascript logo" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h3 class="skills__heading">This Project uses some Key Principles that I have learned so far</h3>
+      <div class="skills__container">
+        <ul class="skills__list">
+          <li class="skills__list-item">This Site was Mobile First developed!</li>
+          <li class="skills__list-item">This Site is Responsive</li>
+          <li class="skills__list-item">This Site uses SCSS</li>
+          <li class="skills__list-item">This Site uses the BEM Notation</li>
+        </ul>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__list-item">
+          <a class="footer__list-item-link" href="#">Cookies</a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-item-contact button" href="mailto: simonovicluka013@outlook.de">Contact</a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-item-link" href="#">Cookies</a>
+        </li>
+      </ul>  
+    </footer>
+
+  </div>
+ 
+
+  <script src="src/main.js"></script>
+</body>
+</html>
